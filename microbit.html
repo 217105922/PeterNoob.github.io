@@ -1144,6 +1144,7 @@
 
   <div itemprop="text" class="Box-body p-0 blob-wrapper data type-html ">
       
+<<<<<<< HEAD
 <table class="highlight tab-size js-file-line-container" data-tab-size="8" data-paste-markdown-skip>
       <tr>
         <td id="L1" class="blob-num js-line-number" data-line-number="1"></td>
@@ -2020,6 +2021,22 @@
 
     </main>
   </div>
+=======
+      /* Optional: Add active class to the current button (highlight it) */
+      var container = document.getElementById("btnContainer");
+      var btns = container.getElementsByClassName("btn");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function() {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
+      </script>
+
+    
+       
+>>>>>>> parent of 25adb2b... 0.0.2
   
 
   </div>
