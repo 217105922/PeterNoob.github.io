@@ -19,6 +19,7 @@
 
 <div class="jumbotron text-center" style="margin-bottom:0">
   <h1>Micro:bit 自學網站</h1>
+  
 </div>
 
 <!-- <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
@@ -41,8 +42,8 @@
   </div>  
 </nav> -->
 
-<div class="container" style="margin-top:30px">
-  <div class="row">
+<div class="container" id="container" style="margin-top:30px">
+  <div class="row"  id="row0">
     <div class="col-sm-4">
       <h2>About Me</h2>
       <h5>Photo of me:</h5>
@@ -50,24 +51,42 @@
       <p>Micro Bit（也叫做BBC Micro Bit，或風格化為micro:bit）是基於ARM架構的嵌入式系統，由BBC設計用於英國的電腦教育。</p>
       <h3>類別</h3>
       <p></p>
+      <div class= "btn-group">
+      <ul class="nav nav-pills flex-column flex-sm-row">
+        <li class="nav-item">   
+        <button type="button" id="1" class="btn btn-secondary">初階</button>
+        </li>
+        <li class="nav-item">
+        <button type="button"  id="2" class="btn btn-secondary">中階</button>
+        </li>
+        <li class="nav-item">
+        <button type="button" id="3" class="btn btn-secondary">高難度</button>
+        </li>
+        <li class="nav-item">
+         
+        </li>
+      </ul>
+      </div>
+      <hr class="d-sm-none">
+    </div>
+    <div class="col-sm-4" ></div>
+    <div class="col-sm-4" >
+        <figure class="figure">
+            <img src="images/microbit.gif" class="figure-img img-fluid rounded" alt="A generic square placeholder image with rounded corners in a figure.">
+            <figcaption class="figure-caption">一個小程式顯示一個跳動的心</figcaption>
+          </figure>
+    </div>
+  </div>
+
+<!-- https://www.youtube.com/watch?v=JJReq9AJVwg -->
+<div class="row" id="row1">
+    <div class="col-sm-4">
       <ul class="nav nav-pills flex-column">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">認識MicroBit</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">初階</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">中階</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">高難度</a>
-        </li>
       </ul>
       <hr class="d-sm-none">
     </div>
-    <div class="col-sm-8">
-      <h2>microbit起步(無需microbit)英文</h2>
+    <div class="col-sm-8" id="c1">
+   <h2>microbit起步(無需microbit)英文</h2>
       <h5>短片</h5>
       <iframe class="img-fluid"  src="https://www.youtube.com/embed/46nqNwqVE1w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <p>Some text..</p>
@@ -80,17 +99,18 @@
       <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
     </div>
   </div>
-</div>
-<!-- https://www.youtube.com/watch?v=JJReq9AJVwg -->
 
-<div class="container" style="margin-top:30px">
-    <div class="row">
+
+
+
+
+    <div class="row" id="row2">
       <div class="col-sm-4">
         <ul class="nav nav-pills flex-column">
         </ul>
         <hr class="d-sm-none">
       </div>
-      <div class="col-sm-8">
+      <div class="col-sm-8" id="c2">
         <h2>reaction game (錫紙)</h2>
         <h5>文字</h5>
         <img src="images/reactgame.jpg" class="img-fluid" alt="Responsive image">
@@ -109,10 +129,72 @@
         <p></p>
       </div>
     </div>
+
+
+    <div class="row" id="row3">
+        <div class="col-sm-4">
+          <ul class="nav nav-pills flex-column">
+          </ul>
+          <hr class="d-sm-none">
+        </div>
+        <div class="col-sm-8" id="c3">
+          <h2</h2>
+          <h5></h5>
+          <img src="images/reactgame.jpg" class="img-fluid" alt="Responsive image">
+          <p> <a href="https://microbit.org/projects/make-it-code-it/reaction-game/"target="_blank" > 前往網頁..</a></p>
+          <p> <li>用硬紙板和錫紙製作兩個物理輸入開關–與壓力開關警報項目中使用的類似。</li>
+              <li>如圖所示，將它們連接到micro：bit引腳–每個開關上的一個錫紙焊盤連接到micro：bit的GND引腳，另一個連接到pin 1或pin 2，具體取決於您是玩家A還是玩家B 。</li>
+              <li>該程序將等待1到5秒之間的隨機時間，然後在LED顯示屏輸出上顯示心臟。</li>
+              <li>您無法在按鈕亮起之前按一下它，因為它使用布爾邏輯來阻止任何人作弊！布爾變量只能有兩個值：True或False。遊戲開始變量通過僅檢查遊戲開始時按下了哪個按鈕來防止任何玩家過早按下其按鈕。</li>
+              <li>無限循環使遊戲保持運行，因此您可以繼續玩遊戲。</li></p>
+  
+          <br>
+          <h2></h2>
+          <h5></h5>
+          
+          <p></p>
+          <p></p>
+        </div>
+      </div>
   </div>
 <div class="jumbotron text-center" style="margin-bottom:0">
   <p>The end of the Page</p>
 </div>
 
+
+
+<script>
+document.getElementById('1').addEventListener("click", clicked1);
+
+ function clicked1(){  
+     document.getElementById('c1').style.display = "block";
+     document.getElementById('c2').style.display = "none";
+     document.getElementById('c3').style.display = "none";
+     document.getElementById('row1').style.order = "1";
+ 
+ }
+
+ document.getElementById('2').addEventListener("click", clicked2);
+
+ function clicked2(){
+     document.getElementById('c1').style.display = "none";
+     document.getElementById('c2').style.display = "block";
+     document.getElementById('c3').style.display = "none";
+     document.getElementById('row2').style.order = "1";
+ 
+
+ }
+
+ document.getElementById('3').addEventListener("click", clicked3);
+
+ function clicked3(){
+     document.getElementById('c1').style.display = "none";
+     document.getElementById('c2').style.display = "none";
+     document.getElementById('c3').style.display = "block";
+     document.getElementById('row3').style.order = "1";
+ 
+ }
+
+</script>
 </body>
 </html>
